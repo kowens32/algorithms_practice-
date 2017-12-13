@@ -1,12 +1,13 @@
-///WIP
+
 function confirmEnding(str, target) {
     var len =  target.length;
     console.log('this is a number',len);
-    var test = str.substr(len);
-    console.log('here i am', test);
+    str = str.substr(-len, len);
+    console.log('here i am', str);
 
-    return str;
+    return str === target;
 
+//   console.log('correct?', str, target);
 }
 
 confirmEnding("Bastian", "n");
